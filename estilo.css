@@ -1,0 +1,12 @@
+/* centralizando conteúdo no meio da tela */
+.centraliza{
+    margin: auto;
+    text-align: center;
+}
+#efeito_maquina_escrever{
+    max-width: 680px;
+    text-align: center;
+    margin: 68px auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+}
