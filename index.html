@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Tags meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+
+    <!-- Folha de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>Cronometro</title>
+</head>
+<body>
+    <!-- navbar responsivo -->
+    <nav class="navbar navbar-dark bg-primary mb-5"  id="navbar">
+        <div class="container">
+            <div class="col-md-12">  
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" width="50" height="50" alt="Orçamento pessoal">
+                </a>
+            </div>
+
+            <div class="com-md-12">
+                <h2 class="text-dark"> Cronometro by Marcelo Silva</h2>
+            </div>
+        </div>
+    </nav>
+
+   <div class="container">
+       <div class="row">
+            <div class="centraliza">
+                <div class="col-12 mb-3">
+                        <h1>Cronometro online</h1>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <h3 class="lead">Cronometro Vanilla JS</h3>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <h1 id="counter">00:00:00</h1>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <button class="btn btn-success btn-lg" id="button-start" onclick="iniciar()">Start</button>
+                    <button class="btn btn-warning btn-lg" id="button-stop" onclick="parar()">stop</button>
+                    <button class="btn btn-danger btn-lg" id="button-reset" onclick="resetar()">Reset</button>
+                </div>
+            </div>
+       </div>
+   </div>
+
+   <!-- Efeito máquina de escrever -->
+   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 id="efeito_maquina_escrever">
+          Olá eu sou Marcelo H. P. Silva. Esse site foi desenvolvido com o intuito de aprender as principais funcionalidades da linguagem de programação Javascript!
+        </h3>
+      </div>
+    </div>
+  </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
